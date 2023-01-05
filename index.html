@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 뷰포트 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>메디힐(반응형)</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/icon">
+
+    <!-- fullpage.css 연결 -->
+    <link rel="stylesheet" href="css/jquery.fullPage.css" type="text/css">
+
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+    <!-- 제이쿼리 라이브러리 -->
+    <script src="js/jquery-3.6.3.js"></script>
+
+    <!-- fullpage.js 연결 -->
+    <script src="js/jquery.fullPage.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- 제이쿼리 사용자 파일 -->
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <!-- 로고 -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="로고">
+            </a>
+        </div>
+        <!-- 글로벌 내비게이션(전체 메뉴) -->
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">스킨케어</a>
+                    <ul class="sub">
+                        <div>
+                            <div>
+                                <div class="sub_title">스킨케어</div>
+                                <div class="sub_menu">
+                                    <li><a href="#">스킨&amp;토너</a></li>
+                                    <li><a href="#">패드</a></li>
+                                    <li><a href="#">앰플&amp;에센스</a></li>
+                                    <li><a href="#">클렌징</a></li>
+                                    <li><a href="#">바디케어</a></li>
+                                </div>
+                            </div>
+                            <div class="sub_img">
+                                <img src="img/sub_bg1.png" alt="서브배경1">
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">마스크팩</a>
+                    <ul class="sub">
+                        <div>
+                            <div>
+                                <div class="sub_title">마스크팩</div>
+                                <div class="sub_menu">
+                                    <li><a href="#">진정라인</a></li>
+                                    <li><a href="#">미백라인</a></li>
+                                    <li><a href="#">콜라겐라인</a></li>
+                                    <li><a href="#">보습라인</a></li>
+                                </div>
+                            </div>
+                            <div class="sub_img">
+                                <img src="img/sub_bg2.png" alt="서브배경2">
+                            </div> 
+                        </div>                           
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">핫딜</a>
+                    <ul class="sub">
+                        <div>
+                            <div>
+                                <div class="sub_title">핫딜</div>
+                                <div class="sub_menu">
+                                    <li><a href="#">패드</a></li>
+                                    <li><a href="#">샴푸&amp;린스</a></li>
+                                    <li><a href="#">에센스</a></li>
+                                </div>
+                            </div>
+                            <div class="sub_img">
+                                <img src="img/sub_bg3.png" alt="서브배경3">
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">이벤트</a>
+                    <ul class="sub">
+                        <div>
+                            <div>
+                                <div class="sub_title">이벤트</div>
+                                <div class="sub_menu">
+                                    <li><a href="#">진행중 이벤트</a></li>
+                                    <li><a href="#">종료된 이벤트</a></li>
+                                    <li><a href="#">당첨자 발표</a></li>
+                                </div>
+                            </div>
+                            <div class="sub_img">
+                                <img src="img/sub_bg4.png" alt="서브배경4">
+                            </div> 
+                        </div>   
+                    </ul>
+                </li>                    
+                <li>
+                    <a href="#">리뷰</a>
+                    <ul class="sub">
+                        <div>
+                            <div>
+                                <div class="sub_title">리뷰</div>
+                                <div class="sub_menu">
+                                    <li><a href="#">베스트 리뷰</a></li>
+                                    <li><a href="#">포토 리뷰</a></li>
+                                    <li><a href="#">텍스트 리뷰</a></li>
+                                </div>
+                            </div>
+                            <div class="sub_img">
+                                <img src="img/sub_bg5.png" alt="서브배경5">
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">브랜드</a>
+                    <ul class="sub">
+                        <div>
+                            <div>
+                                <div class="sub_title">브랜드</div>
+                                <div class="sub_menu">
+                                    <li><a href="#">브랜드 소개</a></li>
+                                    <li><a href="#">CEO 인사말</a></li>
+                                </div>
+                            </div>
+                            <div class="sub_img">
+                                <img src="img/sub_bg6.png" alt="서브배경6">
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- 로그인과 조인, 햄버거 메뉴 -->
+        <div class="right_menu">
+            <div class="member">
+                <ul>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">JOIN</a></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <a href="#">
+                    <img src="img/ham_menu.png" alt="햄버거 메뉴">
+                </a>
+            </div>
+        </div>
+        
+    </header>
+    <div class="wrap" id="fullpage">        
+        <!-- .section(pc버전 fullpage에서 사용) -->
+        <section class="section main_slide">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide main1">
+                        <div class="main_txt">
+                            <h1>압도적 <i>1</i><i>위</i> 마스크팩</h1>
+                            <p>올리브영 5년 연속 판매 1위<br>리뉴얼로 더 완벽해진 진정을 만나보세요!</p>
+                        </div>
+                        <div class="main_img">
+                            <img src="img/main1.png" alt="메인 슬라이드">
+                        </div>
+                    </div>
+                    <div class="swiper-slide main2">
+                        <div class="main_txt">
+                            <h1>1등 티트리의 진정 자신감</h1>
+                            <p>하루의 시작과 끝에서 만나는<br>티트리 진정 패드와<br>티트리 진정 버블로 하루종일<br>차분한 피부를 느껴보세요!</p>
+                        </div>
+                        <div class="main_img">
+                            <img src="img/main2.png" alt="메인 슬라이드">
+                        </div>
+                    </div>
+                    <div class="swiper-slide main3">
+                        <h1><span>티트리 진정 라인</span>
+                            <br>티트리바이옴 시카 4종 세트</h1>
+                        <div class="main_txt">
+                            <p>메디힐이 제안하는 티트리 처방으로<br>자극받은 피부를 차분하고 깨끗하게</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="section product">
+            <h1>PRODUCT</h1>
+            <!-- 탭메뉴 -->
+            <div class="tab">
+                <!-- 탭제목 -->
+                <div class="tab_title">
+                    <ul>
+                        <li class="active"><a href="#">NEW</a></li>
+                        <li><a href="#">BEST</a></li>
+                    </ul>
+                </div>
+                <!-- 탭내용 -->
+                <div class="tab_con">
+                    <div class="tab_con1">
+                        <!-- new product slide -->
+                        <div class="swiper new_product">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="img/new_product1.png" alt="콜라겐 채움 패드 100매">
+                                    <h3><b>콜라겐 채움 패드</b></h3>
+                                    <p>저분자 콜라겐을 꽉 꽉 담아 탱탱하게</p>
+                                </a>
+                              </div>
+                              <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="img/new_product2.png" alt="마데카소사이드 흔적패드 100매">
+                                    <h3><b>마데카소사이드 흔적패드</b></h3>
+                                    <p>패드 한장으로 잡티 흔적 개선까지</p>
+                                </a>
+                              </div>
+                              <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="img/new_product3.png" alt="티트리 트러블 패드 100매">
+                                    <h3><b>티트리 트러블 패드</b></h3>
+                                    <p>피부 즉시 진정, 강력한 한장</p>
+                                </a>
+                              </div>
+                              <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="img/new_product4.png" alt="워터마이드 수분 패드 100매">
+                                    <h3><b>워터마이드 수분 패드</b></h3>
+                                    <p>쿨링효과로 매일 아침 붓기완화</p>
+                                </a>
+                              </div>
+                              <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="img/new_product5.png" alt="티트리 에센셜 마스크 10매">
+                                    <h3><b>티트리 에센셜 마스크</b></h3>
+                                    <p>11년 연속 1위! 누구나 사랑하는 그 제품</p>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="tab_con2">
+                        <!-- best product slide -->
+                        <div class="swiper new_product">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="img/best_product1.png" alt="티트리 시카 앰플 50ml">
+                                    <h3><b>티트리 시카 앰플 50ml</b></h3>
+                                    <p>진정 효과 만족도 96.8%</p>
+                                </a>
+                              </div>
+                              <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="img/best_product2.png" alt="티트리 패드+폼 진정 SET">
+                                    <h3><b>티트리 패드+폼 진정 SET</b></h3>
+                                    <p>진정에 진정을 더하다!</p>
+                                </a>
+                              </div>
+                              <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="img/best_product3.png" alt="티트리 시카 크림 100ml 더블SET">
+                                    <h3><b>티트리 시카 크림 100ml 더블SET</b></h3>
+                                    <p>청량 진정 성분 75% 함유</p>
+                                </a>
+                              </div>
+                              <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="img/best_product4.png" alt="바오밥 수딩 4종 기획세트">
+                                    <h3><b>바오밥 수딩 4종 기획세트</b></h3>
+                                    <p>토너&amp;세럼&amp;크림&amp;클렌징폼  SET</p>
+                                </a>
+                              </div>
+                              <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="img/best_product5.png" alt="화이트 밀크 3종 기획세트">
+                                    <h3><b>화이트 밀크 3종 기획세트</b></h3>
+                                    <p>토너&amp;세럼&amp;크림 SET</p>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="section"> -->
+            <!-- <h1>NEWS &amp; EVENT</h1> -->
+        <section class="section event">
+            <h1>NEWS &amp; EVENT</h1>
+            <h3>이벤트</h3>
+            <div class="swiper eventSlide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                    <a href="#">
+                        <div class="event_img event1"></div>
+                        <div class="event_txt">
+                            <p>2022 BEST AWARD</p>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="swiper-slide">
+                    <a href="#">
+                        <div class="event_img event2"></div>
+                        <div class="event_txt">
+                            <p>티트리 앰플 리필 출시 기념</p>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="swiper-slide">
+                    <a href="#">
+                        <div class="event_img event3"></div>
+                        <div class="event_txt">
+                            <p>재찬 포토카드 증정 이벤트!</p>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="swiper-slide">
+                    <a href="#">
+                        <div class="event_img event4"></div>
+                        <div class="event_txt">
+                            <p>NEW 피부맞이 EVENT</p>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="swiper-slide">
+                    <a href="#">
+                        <div class="event_img event5"></div>
+                        <div class="event_txt">
+                            <p>풍성한 한가위 선물 대전</p>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <div class="swiper-scrollbar"></div>
+                </div>
+        </section>
+        <section class="section news">
+            <h1>NEWS &amp; EVENT</h1>
+            <h3>뉴스</h3>
+            <div class="news_box">
+                <div class="news1">
+                    <div class="news_img">
+                        <img src="img/news1.png" alt="메디힐 신규가입 혜택">
+                    </div>
+                    <div class="news_txt">
+                        <span>BENEFIT</span>
+                        <p>메디힐 신규가입 혜택</p>
+                    </div>                        
+                </div>
+                <div class="news2">
+                    <div class="news_img">
+                        <img src="img/news2.png" alt="리뷰 작성하면 월 최대 5천 포인트 증정">
+                    </div>
+                    <div class="news_txt">
+                        <span>BENEFIT</span>
+                        <p>리뷰 작성하면 월 최대 5천 포인트 증정</p>    
+                    </div>                        
+                </div>
+                <button>All News</button>
+            </div>
+        </section>
+        <!-- </section> -->
+
+        <section class="section video">
+            <h1>MEDIHEAL VIDEO</h1>
+            <!-- 흐르는 글자 -->
+            <div class="marquee">
+                <div class="marquee_box">
+                    <span>MEDIHEAL TODAY,&nbsp;&nbsp;&nbsp; BEAUTIFUL SKIN TOMORROW</span>
+                    <span>MEDIHEAL TODAY,&nbsp;&nbsp;&nbsp; BEAUTIFUL SKIN TOMORROW</span>
+                </div>
+            </div>
+            <!-- 유튜브 동영상 -->
+            <div class="youtube">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zrt_if9jIIM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section class="section follow">
+            <h1>FOLLOW US</h1>
+            <p>@mediheal_official</p>
+            <div class="follow_list">
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+        </section>
+        <footer class="section fp-auto-height">
+            <!-- 흐르는 글자 -->
+            <div class="marquee">
+                <div class="marquee_box">
+                    <span>MEDIHEAL TODAY,&nbsp;&nbsp;&nbsp; BEAUTIFUL SKIN TOMORROW</span>
+                    <span>MEDIHEAL TODAY,&nbsp;&nbsp;&nbsp; BEAUTIFUL SKIN TOMORROW</span>
+                </div>
+            </div>
+
+            <div class="f_wrap">
+                <div class="f_top">
+                    <ul>
+                        <li><a href="#">브랜드소개</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이용안내</a></li>
+                    </ul>
+                </div>
+                <div class="f_bottom">
+                    <div class="f_logo">
+                        <img src="img/f_logo.png" alt="">
+                    </div>
+                    <div class="sns">
+                        <ul>
+                            <li><a href="#">
+                                <img src="img/instagram.png" alt="인스타그램">
+                            </a></li>
+                            <li><a href="#">
+                                <img src="img/facebook.png" alt="페이스북">
+                            </a></li>
+                            <li><a href="#">
+                                <img src="img/youtube.png" alt="유튜브">
+                            </a></li>
+                        </ul>
+                    </div>
+                    <address>
+                        엘앤피코스메틱(주) 대표 : 권오섭<br>
+                        주소 : 서울시 강서구 공항대로 516 메디힐빌딩<br>
+                        사업자등록번호 : 109-86-17345 대표번호 : 080-860-8400
+                    </address>
+                    
+                </div>                
+            </div>
+            <small>
+                copyright ⓒ MEDIHEALSHOP all rights reserved.
+            </small>
+        </footer>
+    </div>
+    <!-- 팝업메뉴 -->
+    <div class="popup_menu">
+        <!-- 닫기 버튼 -->
+        <div class="close_btn">
+            <a href="#">
+                <img src="img/close.png" alt="닫기">
+            </a>
+        </div>
+        <h3>로그인하신 후 더 많은<br>메디힐의 소식을 만나보세요!</h3>
+        <div class="buttons">
+            <ul>
+                <li>
+                    <a href="#">Join Us</a>
+                </li>
+                <li>
+                    <a href="#">Login</a>
+                </li>
+            </ul>
+        </div>
+        <div class="popup_nav">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">스킨케어</a>
+                        <ul class="sub">
+                            <div>
+                                <li><a href="#">스킨&amp;토너</a></li>
+                                <li><a href="#">패드</a></li>
+                                <li><a href="#">앰플&amp;에센스</a></li>
+                                <li><a href="#">크림&ampl로션</a></li>
+                                <li><a href="#">클렌징</a></li>
+                                <li><a href="#">바디케어</a></li>
+                                <li><a href="#">선케어</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">마스크팩</a>
+                        <ul class="sub">
+                            <div>
+                                <li><a href="#">진정라인</a></li>
+                                <li><a href="#">미백라인</a></li>
+                                <li><a href="#">콜라겐라인</a></li>
+                                <li><a href="#">보습라인</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">핫딜</a>
+                        <ul class="sub">
+                            <div>
+                                <li><a href="#">패드</a></li>
+                                <li><a href="#">샴푸&amp;린스</a></li>
+                                <li><a href="#">에센스</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">이벤트</a>
+                        <ul class="sub">
+                            <div>
+                                <li><a href="#">진행중 이벤트</a></li>
+                                <li><a href="#">종료된 이벤트</a></li>
+                                <li><a href="#">당첨자 발표</a></li>
+                            </div>
+                        </ul>
+                    </li>                    
+                    <li>
+                        <a href="#">리뷰</a>
+                        <ul class="sub">
+                            <div>
+                                <li><a href="#">베스트 리뷰</a></li>
+                                <li><a href="#">포토 리뷰</a></li>
+                                <li><a href="#">텍스트 리뷰</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">브랜드</a>
+                        <ul class="sub">
+                            <div>
+                                <li><a href="#">브랜드 소개</a></li>
+                                <li><a href="#">CEO 인사말</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="popup_follow">
+            <h4>Follow Us</h4>
+            <div class="popup_sns">
+                <ul>
+                    <li><a href="#">
+                        <img src="img/popup_instagram.png" alt="인스타그램">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="img/popup_facebook.png" alt="페이스북">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="img/popup_youtube.png" alt="유튜브">
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
